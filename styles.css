@@ -705,6 +705,108 @@ body::before {
   transform: translateY(-1px);
 }
 
+.trust-badge-button {
+  cursor: pointer;
+  background: rgba(240, 185, 11, 0.12);
+  border: 1.5px solid rgba(240, 185, 11, 0.35);
+  color: var(--accent-gold);
+  font-size: 12px;
+  padding: 9px 16px;
+}
+
+.trust-badge-button:hover {
+  background: rgba(240, 185, 11, 0.2);
+  border-color: var(--accent-gold);
+  transform: translateY(-2px);
+}
+
+/* ──────────────────── MODAL ─────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, var(--surface) 0%, var(--surface-light) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  max-width: 500px;
+  width: 90vw;
+  max-height: 85vh;
+  overflow-y: auto;
+  z-index: 999;
+  animation: slideUp 0.4s ease;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-header h2 {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: var(--accent-gold);
+}
+
+.modal-body {
+  padding: var(--spacing-xl);
+}
+
+.modal-footer {
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.how-to-step {
+  background: rgba(240, 185, 11, 0.05);
+  border-left: 3px solid var(--accent-gold);
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 14px;
+}
+
+.how-to-step h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin: 0 0 6px;
+}
+
+.how-to-step p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* ──────────────────── APP CONTAINER ─────────────────────── */
 .app-container {
   min-height: 300px;

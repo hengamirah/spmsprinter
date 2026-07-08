@@ -386,6 +386,24 @@ function submitSend() {
   });
 }
 
+// ──────────────────── MODAL FUNCTIONS ──────────────────────
+function showHowToUseModal() {
+  document.getElementById('howToUseModal').style.display = 'block';
+  document.getElementById('modalOverlay').style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeHowToUseModal() {
+  document.getElementById('howToUseModal').style.display = 'none';
+  document.getElementById('modalOverlay').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closeHowToUseModal();
+});
+
 // ──────────────────── INITIALIZATION ──────────────────────
 function init() {
   // Validate SCRIPT_URL is configured
