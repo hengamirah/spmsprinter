@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently asked questions about SPM Sprinter study decks and orders.">
+  <title>FAQ — SPM Sprinter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .faq-container { max-width: 720px; margin: 0 auto; }
+    .faq-item { margin-bottom: 20px; border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; transition: all 0.3s ease; }
+    .faq-item:hover { border-color: var(--accent-gold); background: rgba(240, 185, 11, 0.03); }
+    .faq-question { padding: 18px 20px; cursor: pointer; font-weight: 600; color: var(--text-primary); display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .faq-question:hover { color: var(--accent-gold); }
+    .faq-toggle { color: var(--accent-gold); font-weight: 700; transition: transform 0.3s ease; }
+    .faq-item.open .faq-toggle { transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; padding: 0 20px; color: var(--text-secondary); line-height: 1.8; }
+    .faq-item.open .faq-answer { max-height: 500px; padding: 0 20px 18px; }
+    .nav-link { color: var(--accent-gold); text-decoration: none; font-weight: 600; }
+    .nav-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="glow glow-primary"></div>
+  <div class="glow glow-secondary"></div>
+
+  <main class="container">
+    <div class="card">
+      <div class="logo-section">
+        <h1 class="brand-title">SPM Sprinter</h1>
+        <p class="brand-tagline">Sprint Towards Straight A's</p>
+      </div>
+
+      <h2 class="page-title">Frequently Asked Questions</h2>
+      <p class="page-subtitle">Find answers to common questions about orders and delivery.</p>
+      <div class="divider"></div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            How do I claim my study deck?
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            Visit our <a href="index.html" class="nav-link">claim page</a>, enter your Shopee Order ID, and follow the prompts to receive your deck. The entire process takes less than 2 minutes.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Why can't I claim my order yet? (Release Delay)
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            To prevent fraud, we require a 30-minute verification period after your order is placed. You'll see a countdown timer on the claim page showing exactly when your order will be ready. This is a security measure we use to protect both our customers and content.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            I entered my Order ID but it says "Not Found"
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            The Order ID must match exactly what's shown in your Shopee purchase history. Make sure you:
+            <ul style="margin-top: 8px; margin-left: 20px;">
+              <li>Copied the exact Order ID (it's case-insensitive)</li>
+              <li>Didn't include extra spaces</li>
+              <li>Ordered from the correct seller</li>
+            </ul>
+            If you're still stuck, <a href="contact.html" class="nav-link">contact us</a>.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Where is my email? (Gmail tips)
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            The deck usually arrives within 5 minutes. If you haven't received it:
+            <ul style="margin-top: 8px; margin-left: 20px;">
+              <li><strong>Check spam/junk folder</strong> — some email providers filter PDFs</li>
+              <li><strong>Make sure you used the right email</strong> — we can't resend to a different address</li>
+              <li><strong>Check your email storage</strong> — if your inbox is full, emails may bounce</li>
+              <li><strong>Avoid school/student emails</strong> — they often block attachments (use Gmail, Yahoo, Outlook)</li>
+            </ul>
+            If the email still doesn't arrive after 30 minutes, <a href="contact.html" class="nav-link">let us know</a>.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Can I get the deck sent to a different email?
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            Unfortunately, no. For security reasons, each Order ID can only deliver once. To avoid this, make sure you enter the correct email address on the first try. If you made a mistake, please <a href="contact.html" class="nav-link">contact us</a> via Shopee chat.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What format is the study deck in?
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            The study decks are delivered as PDF files. You can open them on any device — computer, tablet, or smartphone — using a standard PDF reader. Most devices have PDF readers built-in.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            The email says it's a bundle. What does that mean?
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            A bundle means your order includes multiple study decks (e.g., "Add Maths + Physics"). You'll receive all of them in the same email as separate PDF attachments.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            How long are the study decks valid? Can I access them later?
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            Once you download the PDF, it's yours to keep forever. You can access it anytime on any device. We recommend saving it in a safe location or cloud storage (Google Drive, OneDrive, Dropbox) so you don't lose it.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Can I share the study deck with friends?
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            Our study decks are for personal use only. Each person should purchase their own copy to support our work and ensure we can keep creating quality materials. Sharing copies violates our terms of service.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Still have questions?
+            <span class="faq-toggle">▼</span>
+          </div>
+          <div class="faq-answer">
+            We're here to help! <a href="contact.html" class="nav-link">Contact us</a> or reach out to us via <a href="https://shopee.com.my/spmsprinter" target="_blank" class="nav-link">Shopee chat</a> and we'll get back to you quickly.
+          </div>
+        </div>
+      </div>
+
+      <footer class="card-footer" style="margin-top: 40px;">
+        <p><a href="index.html" class="footer-link">← Back to claim your deck</a></p>
+        <p><a href="contact.html" class="footer-link">Contact us</a></p>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    function toggleFaq(element) {
+      const item = element.parentElement;
+      item.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
